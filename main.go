@@ -28,4 +28,5 @@ func (p *Person) sayHello() {
 func main() {
 	emeka := NewPerson("Nnaemeka", "Onyeokoro", 22, 200)
 	emeka.sayHello()
+	main2()
 }
