@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 type Person struct {
 	firstname string
@@ -26,7 +29,7 @@ func (p *Person) sayHello() {
 
 // OH MY GOD, golang is so wonderful!!!!
 func main() {
-	emeka := NewPerson("Nnaemeka", "Onyeokoro", 22, 200)
-	emeka.sayHello()
-	main2()
+	duration := 5 * time.Second
+	time.Sleep(duration)
+	fmt.Printf("I slept for %v and now I am alive\n", duration)
 }
