@@ -28,5 +28,5 @@ func (p *Person) sayHello() {
 
 // OH MY GOD, golang is so wonderful!!!!
 func main() {
-	main2()
+	deadlock_due_to_range()
 }
