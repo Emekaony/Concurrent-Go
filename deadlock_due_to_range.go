@@ -8,6 +8,7 @@ func deadlock_due_to_range() {
 		for i := 0; i < 10; i++ {
 			ch <- i
 		}
+		close(goChannel)
 	}(goChannel)
 
 	// now try to use a range based for loop to iterate over this channel
